@@ -471,24 +471,26 @@
         </div>
         <select id="filter-dropdown">
             <option value="">Select a Category</option>
+            <option value="taxonomy">Taxonomy</option>
             <option value="yearinitiated">Year Initiated</option>
-            <option value="link">Link</option>
-            <option value="mandatedinlaworvoluntary">Mandated in Law or Voluntary</option>
             <option value="developer">Developer</option>
-            <option value="objective">Objective</option>
-            <option value="linkpolicyobjectives">Link Policy Objectives</option>
-            <option value="sectorscovered">Sectors Covered</option>
+            <option value="mandatedinlaworvoluntary">Mandated?</option>
+            <option value="Purpose">Type</option>
+            <option value="objective">Objectives</option>
+            <option value="linkpolicyobjectives">Objectives of Interest</option>
+            <!--<option value="Sectorclassification">Sector Classification</option>-->
             <option value="approachtoeligibility">Approach to Eligibility</option>
-            <option value="Purpose">Purpose</option>
-            <option value="DonosignificantharmDNHS">Do No Significant Harm (DNHS)</option>
-            <option value="Additionalguidance">Additional guidance</option>
-            <option value="otherusefuldocuments">Other useful documents</option>
-            <option value="mostrecentupdate">Most Recent Update</option>
-            <option value="Intendedtobeinteroperable">Intended to be interoperable</option>
-            <option value="Biodiversity">Biodiversity</option>
-            <option value="MemberofIPFS">Member of the IPFS</option>
+            <option value="sectorscovered">Sectors Covered</option>
             <option value="Socialobjectivessafeguards">Social Objectives / Safeguards</option>
-            <option value="Sectorclassification">Sector Classification</option>
+            <option value="DonosignificantharmDNHS">Do No Significant Harm (DNHS)</option>
+            <!--<option value="mostrecentupdate">Most Recent Update</option>-->
+            <option value="Intendedtobeinteroperable">Intended to be Interoperable</option>
+            <!--<option value="Biodiversity">Biodiversity</option>-->
+            <option value="MemberofIPFS">Member of the IPSF</option>
+            <option value="link">Taxonomy Source</option>
+            <option value="Additionalguidance">Additional Guidance</option>
+            <option value="otherusefuldocuments">Other Useful Documents</option>
+
         </select>
         <div id="results-container"></div>
     </div>
@@ -783,26 +785,22 @@
             {
                 latitude: 4.624335,
                 longitude: -74.063644,
-                name: 'Taxonomía Verde de Colombia',
-                link: 'https://www.taxonomiaverde.gov.co/webcenter/portal/TaxonomaVerde',
+                taxonomy: 'Taxonomía Verde de Colombia',
                 yearinitiated: '2022',
-                mostrecentupdate: '-',
+                developer: 'Government of Colombia: The Colombian Superintendency of Finance (SFC), the Ministry of finance (MHCP), The National Planning Department (DNP), the Department of Statistics of Colombia (DANE) and the Ministry of Environment and Sustainable Development (MADS) oversaw the taxonomy development process.',
                 mandatedinlaworvoluntary: 'The taxonomy is voluntary and has no legal status. <br> <br> However, there are regulations in place to support its implementation, although these do not impose specific disclosure obligations.  The SFC has issued external circulars that encourage the use of the taxonomy in labelling of green bonds, ESG portfolios and voluntary labelling of pension funds.',
-                developer: 'Developed by the Government institutions – The Colombian Superintendency of Finance (SFC), the Ministry of finance (MHCP), The National Planning Department (DNP), the Department of Statistics of Colombia (DANE) and the Ministry of Environment and Sustainable Development (MADS).',
-                objective: 'The Colombian Green Taxonomy defined a set of 5 principles that will guide further development and updates. The main objective is to make a substantial contribute to climate change mitigation (1), followed by climate change adaptation (2), ecosystem and (3) biodiversity conservation and water management, soil management, (4) circular economy and  pollution prevention and control. This is broadly similar to the EU taxonomy (even in order of priority) although slightly different wording is used however, soil management is specifically singled out in the Colombian taxonomy which is not the case in the EU taxonomy and comes before the circular economy and pollution prevention and control. <br> <br> In the sectors and activities selected, the taxonomy must also comply with the assessment of DNSH to other environmental including adaptation objectives, as well as ensure compliance with the minimum safeguard requirements.  <br> <br> 6 principles will guide the SFC’s updates: <br> <br> Principle 1 – align with high-level environmental goals and priorities for Colombia; <br> <br> Principle 2 – define eligibility criteria and compliance requirements for each asset and/or activity; <br> <br> Principle 3 – include environmental laws, norms, regulations, plans and programs; <br> <br> Principle 4 – reference, when necessary practices or standards from environmental certification systems; <br> <br> Principle 5 - align economic activities with international standard industrial codes; <br> <br> Principle 6 – study and analyse international taxonomies, including the EU taxonomy for interoperability;',
-                linkpolicyobjectives: 'Paris Agreement: Yes <br> <br> Regional Framework: Yes (TBC) <br> <br> National Strategies: -',
-                sectorscovered: 'Sectors: Construction, Energy, Transport, Water supply and treatment, Waste management emissions capture, Manufacturing, Information and communication. <br> <br>The Colombian taxonomy covers 7 sectors, 47 activities/assets (excluding the AFOLU sector) and 11 further activities that derive from three land use sectors which have environmental objectives other than climate change mitigation.  On this basis, the Colombian Green Taxonomy includes ten sectors with 58 activities.',
-                approachtoeligibility: 'Principle-based: Yes <br> <br> Pass-list approach: Yes <br> <br> Threshold and criteria: Yes <br> <br> Umbrella clauses: - <br> <br> Any combination of the above: Yes',
-                basedonanothertaxonomy: 'The Colombian Green Taxonomy also evaluated other taxonomies and frameworks from the EU and Climate Bonds, and compared them with the national Measurement, Reporting, and Verification (MRV) system to identify the list of sectors and activities.',
+                Purpose: 'Green: Yes <br> <br> Transition: No <br> <br> Ineligible: No',
+                objective: 'The main objective is to make a substantial contribution to climate change mitigation, followed by climate change adaptation, ecosystem and biodiversity conservation and water management, soil management,circular economy and pollution prevention and control.',
+                linkpolicyobjectives: 'Paris Agreement: Yes <br> <br> Regional Framework: - <br> <br> National Strategies: -',
+                approachtoeligibility: 'The Colombian taxonomy uses a pass-list and criteria approach depending on the sector. A list of eligible activities is included for each sector which is typically dependent on its components meeting certain thresholds and criteria.',
+                sectorscovered: 'The Colombian taxonomy covers 10 sectors, 47 activities/assets and 11 further activities that derive from three land use sectors which have environmental objectives other than climate change mitigation. 7  sectors for improvement are covered including, Construction, Energy, Transport, Water supply and treatment, Waste, Management and emissions capture, Manufacturing, Information and communication. An additional 3 economic sectors are covered including Livestock, Agriculture, and Forestry.',
+                Socialobjectivessafeguards: 'The taxonomy includes six social objectives that must not be violated in order for an activity to be eligible. These relate to 1) the evaluation and managements of environmental and social risks and impacts, 2) working and labor conditions, 3) community health and safety, 4) land acquisition and forced resettlement, 5) indigenous peoples, and 6) cultural heritage',
+                DonosignificantharmDNHS: 'Yes <br> <br> Activities must comply with the principle of Do No Significant Harm to any of the environmental or social objectives.',
                 Intendedtobeinteroperable: 'Yes',
-                Purpose: 'Supporting the transition of all existing assets',
-                Sectorclassification: 'Activities that make a substantial contribution define their eligibility based on TSC, which include qualitative or quantitative metrics and thresholds.',
-                DonosignificantharmDNHS: 'Yes <br> <br> Furthermore, activities must comply with the DNSH requirements for other environmental objectives defined in the taxonomies. Generic DNSH requirements for all activities and specific requirements for certain activities exist (similar to the EU). When an activity does not have specific requirements then generic DNSH requirements must be followed.',
-                Socialobjectivessafeguards: 'The eligible asset must ensure that it does not generate a negative social impact (social risks, working conditions…).',
+                MemberofIPFS: 'No',
+                link: 'https://www.taxonomiaverde.gov.co/webcenter/portal/TaxonomaVerde',
                 Additionalguidance: 'The only official regulatory framework for the adoption of the Colombian Green Taxonomy is the SFC’s External Circular 005 of 20223 which provides instructions for adoption. It allows entities supervised by the SFC the option of using the taxonomy for various purposes, including identifying financing and investment opportunities for supporting the transition to a sustainable economy, measuring portfolio alignment with green assets and activities, structuring green products and solutions, and enhancing disclosure and transparency practices. The external circular includes three annexes specifying: the use of the taxonomy for investment portfolios, green bond issuers, and voluntary pension funds. <br> <br> https://www.cerlatam.com/normatividad/superfinanciera-circular-externa-005-de-2022/#:~:text=La%20SuperFinanciera%20',
                 otherusefuldocuments: '• CE 28, 2020 - Green Bonds <br> • CE 08, 2021 - ESG Integration for Voluntary Pension Funds <br> • CE 31, 2021 – ESG and Climate Disclosure Regulation for Issuers <br> • PCE 2022 - Sustainability Linked Bonds <br> <br> The following report provides a helpful comparison between the EU and Colombian Taxonomy provided by the Climate Bond Institute: <br> <br> https://www.climatebonds.net/resources/reports/comparison-study-between-colombian-and-eu-taxonomies',
-                MemberofIPFS: 'No',
-                Biodiversity: '-',
                 country: 'Colombia'
             },
             {
