@@ -471,7 +471,7 @@
         </div>
         <select id="filter-dropdown">
             <option value="">Select a Category</option>
-            <option value="taxonomy">Taxonomy</option>
+            <option value="name">Taxonomy</option>
             <option value="yearinitiated">Year Initiated</option>
             <option value="developer">Developer</option>
             <option value="mandatedinlaworvoluntary">Mandated?</option>
@@ -785,7 +785,7 @@
             {
                 latitude: 4.624335,
                 longitude: -74.063644,
-                taxonomy: 'Taxonomía Verde de Colombia',
+                name: 'Taxonomía Verde de Colombia',
                 yearinitiated: '2022',
                 developer: 'Government of Colombia: The Colombian Superintendency of Finance (SFC), the Ministry of finance (MHCP), The National Planning Department (DNP), the Department of Statistics of Colombia (DANE) and the Ministry of Environment and Sustainable Development (MADS) oversaw the taxonomy development process.',
                 mandatedinlaworvoluntary: 'The taxonomy is voluntary and has no legal status. <br> <br> However, there are regulations in place to support its implementation, although these do not impose specific disclosure obligations.  The SFC has issued external circulars that encourage the use of the taxonomy in labelling of green bonds, ESG portfolios and voluntary labelling of pension funds.',
@@ -1197,7 +1197,7 @@
                 </div>
                 <div class="popup-content-details" style="overflow-y: auto; max-height: calc(100% - 60px);"> <!-- Adjust max-height as needed -->    
                 <div class="popup-content-details">
-                    <strong>Country:</strong> <span class="popup-text">${taxonomy.country}</span><br><br>
+                    <strong>Taxonomy:</strong> <span class="popup-text">${taxonomy.name}</span><br><br>
                     <strong>Year Initiated:</strong> <span class="popup-text">${taxonomy.yearinitiated}</span><br><br>
                     <button id="expand-all">Expand All</button>
                     <button id="collapse-all">Collapse All</button><br><br>
