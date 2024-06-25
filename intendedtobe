@@ -1549,6 +1549,15 @@
                         <div class="collapsible-content">
                             <p>${taxonomy.Intendedtobeinteroperable}</p>
                         </div>
+                     </div>
+                    <div class="collapsible">
+                        <div class="collapsible-header">
+                            <span>Biodiversity</span>
+                            <span class="collapsible-arrow">&#9660;</span>
+                        </div>
+                        <div class="collapsible-content">
+                            <p>${taxonomy.Biodiversity}</p>
+                        </div>
                     </div>
                     <div class="collapsible">
                         <div class="collapsible-header">
